@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="shortcut icon" loading="lazy" href="./img/cross.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script>
+    <title>TicTacToe</title>
+</head>
+
+<body>
+    <img class="game-over d-none" id="game-over" src="./img/game-over.png">
+
+    <a href="" class="restart-btn d-none" id="restart-btn">Restart</a>
+
+    <div class="player-panel">
+        <div id="player-1">
+            <img class="" src="./img/circle.png"> Player 1
+        </div>
+        <div id="player-2" class="player-inactive">
+            <img class="" src="./img/cross.png"> Player 2
+        </div>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td onclick="setElement(0,0)">
+                    <img id="circle-00" class="shape horizontale-0 vertikale-0 diagonale-1 d-none"
+                        src="./img/circle.png">
+                    <img id="cross-00" class="shape horizontale-0 vertikale-0 diagonale-1 d-none" src="./img/cross.png">
+                </td>
+                <td onclick="setElement(0,1)">
+                    <img id="circle-01" class="shape horizontale-0 vertikale-1 d-none" src="./img/circle.png">
+                    <img id="cross-01" class="shape horizontale-0 vertikale-1 d-none" src="./img/cross.png">
+                </td>
+                <td onclick="setElement(0,2)">
+                    <img id="circle-02" class="shape horizontale-0 vertikale-2 diagonale-2 d-none"
+                        src="./img/circle.png">
+                    <img id="cross-02" class="shape horizontale-0 vertikale-2 diagonale-2 d-none" src="./img/cross.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="setElement(1,0)">
+                    <img id="circle-10" class="shape horizontale-1 vertikale-0 d-none" src="./img/circle.png">
+                    <img id="cross-10" class="shape horizontale-1 vertikale-0 d-none" src="./img/cross.png">
+                </td>
+                <td onclick="setElement(1,1)">
+                    <img id="circle-11" class="shape horizontale-1 vertikale-1 diagonale-1 diagonale-2 d-none"
+                        src="./img/circle.png">
+                    <img id="cross-11" class="shape horizontale-1 vertikale-1 diagonale-1 diagonale-2 d-none"
+                        src="./img/cross.png">
+                </td>
+                <td onclick="setElement(1,2)">
+                    <img id="circle-12" class="shape horizontale-1 vertikale-2 d-none" src="./img/circle.png">
+                    <img id="cross-12" class="shape horizontale-1 vertikale-2 d-none" src="./img/cross.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="setElement(2,0)">
+                    <img id="circle-20" class="shape horizontale-2 vertikale-0 diagonale-2 d-none"
+                        src="./img/circle.png">
+                    <img id="cross-20" class="shape horizontale-2 vertikale-0 diagonale-2 d-none" src="./img/cross.png">
+                </td>
+                <td onclick="setElement(2,1)">
+                    <img id="circle-21" class="shape horizontale-2 vertikale-1 d-none" src="./img/circle.png">
+                    <img id="cross-21" class="shape horizontale-2 vertikale-1 d-none" src="./img/cross.png">
+                </td>
+                <td onclick="setElement(2,2)">
+                    <img id="circle-22" class="shape horizontale-2 vertikale-2 diagonale-1 d-none"
+                        src="./img/circle.png">
+                    <img id="cross-22" class="shape horizontale-2 vertikale-2 diagonale-1 d-none" src="./img/cross.png">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black !important;
+    height: 100vh;
+}
+
+table{
+    border-collapse: collapse;
+}
+tr{
+    width:480px;
+}
+td{
+    position: relative;
+    width: 133px;
+    height: 133px;
+    border: 5px solid white;
+    cursor: pointer;
+}
+td:hover{
+    background-color: rgb(50, 50, 50, 0.2);
+}
+tr:first-child td{
+    border-top: 0;
+}
+
+tr td:first-child{
+    border-left: 0;
+}
+   
+table tr:last-child td{
+    border-bottom: 0 ;
+}
+
+table tr td:last-child{
+    border-right: 0;
+}
+.shape{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 26px;
+    top: 26px;
+}
+
+.d-none{
+    display: none;
+}
+.player-panel{
+    display: flex;
+    font-size: 25px;
+}
+.player-panel img{
+
+    height: 35px;
+} 
+.player-panel div{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    color: aliceblue;
+}
+
+.player-inactive{
+    opacity: 0.5;
+}
+.game-over{
+   position: absolute;
+   left: 0;
+   right: 0;
+   width: 100%;
+   z-index: 2;
+   animation: zoomIn 225ms ease-in-out;
+
+}
+.restart-btn {
+    text-align: center;
+    text-decoration: none;
+    background-color: #8b0b0b;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    border: 4px solid white;
+    border-radius: 15px;
+    width: 210px;
+    height: 50px;
+    bottom: 60px;
+    z-index: 3;
+}
+
+.restart-btn:hover {
+    background-color: #7a0c0c;
+}
+
+.highlightElements {
+    background-color: #7a0c0c;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media (max-width: 450px) {
+    .shape{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 16px;
+        top: 16px;
+    }
+}
